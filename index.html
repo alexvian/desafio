@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>   
+    <header class="cabecalho">
+        <a href="https://www.alura.com.br/" target="_blank">
+        <img class="cabecalho__logo" src="assets/Logo.png" alt="Logo Alura">
+        </a>
+        <h1 class="cabecalho__titulo">Challenge Decodificador de Texto</h1> 
+    </header>
+
+    <main class="conteudo__principal"> 
+        <section class="secao__esquerda">
+            <div class="caixa__entrada">
+                <h2>
+                <div class="caixa__texto__area">    
+                  <label for="caixa__texto">
+                     <span id="caixa__texto__container" class="caixa__texto__container" contenteditable="true">Digite seu texto</span>
+                  </label>
+                </div>
+                </h2>
+                <textarea id="caixa__texto" class="caixa__texto" style="display: none;"></textarea> 
+            </div>
+            <p class="instrucoes"><spam class="alerta">!</spam>Apenas letras minúsculas e sem acento.</p>
+            <div class="botoes">
+                <button class="botao__criptografar">Criptografar</button>
+                <button class="botao__descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="secao__direita">
+          <div class="corpo__saida__texto"> 
+              <div class="retangulo">
+                <div class="resultado"  style="display: none;">
+                    <label for="saida__codificador">Texto decodificado:</label>
+                    <textarea id="saida__codificador" placeholder="Retorno do codificador"></textarea>
+                    <div class="botoes__container">
+                        <button class="botao__copiar">Copiar</button>
+                        <button class="reset" onclick="location.href='index.html'">Limpar</button>
+                      </div>
+                </div>
+                  <div class="mensagem__inicial">
+                      <h3 class="mensagem__inicial__titulo">Nenhuma mensagem encontrada</h3>
+                      <p class="mensagem__inicial__paragrafo">Digite ao ladoum texto que você deseja criptografar ou descriptografar.</p>
+                  </div>
+              </div> 
+              <img class="imagem__busca" src="assets/hackers pb.png" alt="Ilustração de um hacker">
+          </div> 
+      </section>
+    </main>
+
+   <footer>
+    <div class="rodape"> <a class="rodape__link" href="https://www.linkedin.com/in/alexvian/" target="_blank">Desenvolvido por Alex Vian</a></div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
